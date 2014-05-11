@@ -13,17 +13,23 @@ function buyApp(btnDOM, db_appname, dummy){
       }
       window.setTimeout(function(){
         document.getElementById("loadingGif").hidden = true;
-        if(dummy != true && data.success==true){
-          btnDOM.parentElement.getElementsByClassName("buyAppBtn")[0].style.display= "none";
-          btnDOM.parentElement.getElementsByClassName("addToWishListBtn")[0].style.display= "none";
-          btnDOM.parentElement.getElementsByClassName("goToAppBtn")[0].style.display= "";
-        }
-        if(data.success!=true){
-          alert("Could not connect to server. Check your Internet connection.");
+        if(dummy != true){
+          if(data.success==true){
+            btnDOM.parentElement.getElementsByClassName("buyAppBtn")[0].style.display= "none";
+            btnDOM.parentElement.getElementsByClassName("addToWishListBtn")[0].style.display= "none";
+            btnDOM.parentElement.getElementsByClassName("goToAppBtn")[0].style.display= "";
+          }
+          else if(data.success!=true){
+            alert("Could not connect to server. Please check your Internet connection.");
+          }
         }
       },waitTime);
       // btnDOM.parentElement.getElementsByClassName("addToWishList")[0].hidden = true; //does not work for input
   });
+}
+
+function goToUrl(url){
+  window.location.href = url;
 }
 
 
