@@ -199,6 +199,7 @@ app.get('/getBinary', function (req, res) {
     var query = new Parse.Query(AppItem);
 
     query.equalTo("name", req.body.name);
+	query.descending("updatedAt");
     query.find({
         success: function (appList) {
             // The object was retrieved successfully.
