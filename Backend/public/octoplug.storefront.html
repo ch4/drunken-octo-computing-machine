@@ -48,12 +48,6 @@
 
         <li class="dropdown"><!-- Settings Options dropdown-->
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>&nbsp; Settings <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#" onclick="showGeoMap();"><span class="glyphicon glyphicon-record" style="top:0.2em"></span>&nbsp; GeoMap<span class="glyphicon glyphicon-map-marker" style="left:-5.45em; top:calc(-0.6em + 0.2em); background-color:white; border-radius:10em"></span></a></li>
-            <li><a href="#" onclick="upcomingFeature();"><span class="glyphicon glyphicon-pencil"></span>&nbsp; Add Your Name</a></li>
-            <li class="divider"></li>
-            <li><a href="#" onclick="resetWorldState();"><span class="glyphicon glyphicon-off"></span>&nbsp; Reset Game</a></li>
-          </ul>
         </li><!--end of Settings Options dropdown-->
 
       </ul><!--end of Right side of navbar-->
@@ -62,7 +56,22 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<div><img id="loadingGif" src="img/Loading_Animation.gif" hidden></div>
+
 <div id="listDiv">
+
+
+  <div class="listItem">
+    <img src="img/LED_blink_320.gif">
+    <br>
+    <div class="itemName">Blinky</div>
+    <div class="itemDesc">We're gonna make the camera blink :)</div>
+    <div class="itemBtns">
+      <br>
+      <!-- <button>Download App</button> -->
+      <input type="button" value="Blink Blink" class="btn buyAppBtn" onclick='buyApp(this, "blinkApp", true);'></input>
+    </div>
+  </div>
 
   <div class="listItem">
     <img src="img/stream image3-resized-600.png">
@@ -72,8 +81,9 @@
     <div class="itemBtns">
       <br>
       <!-- <button>Download App</button> -->
-      <input type="button" value="Buy/Download App" class="btn" onclick='$.post("http://docm.parseapp.com/uploadRunningApp", {"username":"hc","password":"hc","name":"streamApp"}, function(data){});'></input>
-      <input type="button" value="Add to Wishlist" class="btn"></input>
+      <input type="button" value="Buy/Download App" class="btn buyAppBtn" onclick='buyApp(this, "streamApp");'></input>
+      <input type="button" value="Add to Wishlist" class="btn addToWishListBtn"></input>
+      <input type="button" value="Go to App" class="btn goToAppBtn" style="display:none;"></input>
     </div>
   </div>
 
@@ -85,8 +95,9 @@
     <div class="itemBtns">
       <br>
       <!-- <button>Download App</button> -->
-      <input type="button" value="Buy/Download App" class="btn" onclick='$.post("http://docm.parseapp.com/uploadRunningApp", "{"username":"hc","password":"hc","name":"streamApp"}", function(data){});'></input>
-      <input type="button" value="Add to Wishlist" class="btn"></input>
+      <input type="button" value="Buy/Download App" class="btn buyAppBtn" onclick='buyApp(this, "faceApp");'></input>
+      <input type="button" value="Add to Wishlist" class="btn addToWishListBtn"></input>
+      <input type="button" value="Go to App" class="btn goToAppBtn" style="display:none;"></input>
     </div>
   </div>
 
@@ -98,14 +109,15 @@
     <div class="itemBtns">
       <br>
       <!-- <button>Download App</button> -->
-      <input type="button" value="Buy/Download App" class="btn" onclick='$.post("http://docm.parseapp.com/uploadRunningApp, {"username":"hc","password":"hc","name":"motionApp"}, function(data){});'></input>
-      <input type="button" value="Add to Wishlist" class="btn"></input>
+      <input type="button" value="Buy/Download App" class="btn buyAppBtn" onclick='buyApp(this, "motionApp");'></input>
+      <input type="button" value="Add to Wishlist" class="btn addToWishListBtn"></input>
+      <input type="button" value="Go to App" class="btn goToAppBtn" style="display:none;"></input>
     </div>
   </div>
 
 
 
-</div>
+</div> <!--End of ListDiv-->
 
 
 
@@ -117,7 +129,7 @@
 <!-- <script>window.jQuery || document.write('<script src="js/lib/jquery-1.10.1.min.js"><\/script>')</script> -->
 <script src="js/lib/bootstrap.min.js"></script>
 <!-- JS Custom -->
-<script src="snaptube.js"></script>
+<script src="octoplug.js"></script>
 
 </body>
 
