@@ -72,7 +72,7 @@
     <div class="itemBtns">
       <br>
       <!-- <button>Download App</button> -->
-      <input type="button" value="Buy/Download App" class="btn" onclick='$.get("http://docm.parseapp.com/uploadRunningApp?username=hc&password=hc&name=streamApp", function(data){});'></input>
+      <input type="button" value="Buy/Download App" class="btn" onclick='$.post("http://docm.parseapp.com/uploadRunningApp", {"username":"hc","password":"hc","name":"streamApp"}, function(data){});'></input>
       <input type="button" value="Add to Wishlist" class="btn"></input>
     </div>
   </div>
@@ -85,7 +85,7 @@
     <div class="itemBtns">
       <br>
       <!-- <button>Download App</button> -->
-      <input type="button" value="Buy/Download App" class="btn" onclick='$.get("http://docm.parseapp.com/uploadRunningApp?username=hc&password=hc&name=faceApp", function(data){});'></input>
+      <input type="button" value="Buy/Download App" class="btn" onclick='$.post("http://docm.parseapp.com/uploadRunningApp", "{"username":"hc","password":"hc","name":"streamApp"}", function(data){});'></input>
       <input type="button" value="Add to Wishlist" class="btn"></input>
     </div>
   </div>
@@ -98,7 +98,7 @@
     <div class="itemBtns">
       <br>
       <!-- <button>Download App</button> -->
-      <input type="button" value="Buy/Download App" class="btn" onclick='$.get("http://docm.parseapp.com/uploadRunningApp?username=hc&password=hc&name=motionApp", function(data){});'></input>
+      <input type="button" value="Buy/Download App" class="btn" onclick='$.post("http://docm.parseapp.com/uploadRunningApp, {"username":"hc","password":"hc","name":"motionApp"}, function(data){});'></input>
       <input type="button" value="Add to Wishlist" class="btn"></input>
     </div>
   </div>
