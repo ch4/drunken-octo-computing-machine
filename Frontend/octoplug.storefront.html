@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>SnapTube</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false;">
+
+  <!-- CSS Libaries -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
+  <!-- CSS Custom -->
+  <link rel="stylesheet" href="mobilecard-2014-05-11.css"></link>
+<!-- <link type="text/css" href="bootstrap-navigation--responsive-divider.css" rel="stylesheet"></link> -->
+</head>
+
+<body style="padding-top:70px; padding-bottom:70px;" >
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="color:white;" href="#">Octoplug</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">App Store</a></li>
+        <li><a href="#">Developer Center</a></li>
+        <!-- <hr> -->
+      </ul>
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li class="dropdown open" style="margin:-12.5px;"><ul class="dropdown-menu">
+          <li class="divider"></li>
+        </ul></li> -->
+        <li class="active"><a href="#">Featured</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Popular</a></li>
+
+        <li class="dropdown"><!-- Settings Options dropdown-->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>&nbsp; Settings <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="showGeoMap();"><span class="glyphicon glyphicon-record" style="top:0.2em"></span>&nbsp; GeoMap<span class="glyphicon glyphicon-map-marker" style="left:-5.45em; top:calc(-0.6em + 0.2em); background-color:white; border-radius:10em"></span></a></li>
+            <li><a href="#" onclick="upcomingFeature();"><span class="glyphicon glyphicon-pencil"></span>&nbsp; Add Your Name</a></li>
+            <li class="divider"></li>
+            <li><a href="#" onclick="resetWorldState();"><span class="glyphicon glyphicon-off"></span>&nbsp; Reset Game</a></li>
+          </ul>
+        </li><!--end of Settings Options dropdown-->
+
+      </ul><!--end of Right side of navbar-->
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="listDiv">
+
+  <div class="listItem">
+    <img src="img/stream image3-resized-600.png">
+    <br>
+    <div class="itemName">Stream Me</div>
+    <div class="itemDesc">Stream live video footage of your room on your mobile device.</div>
+    <div class="itemBtns">
+      <br>
+      <!-- <button>Download App</button> -->
+      <input type="button" value="Buy/Download App" class="btn" onclick='$.get("http://docm.parseapp.com/uploadRunningApp?username=hc&password=hc&name=streamApp", function(data){});'></input>
+      <input type="button" value="Add to Wishlist" class="btn"></input>
+    </div>
+  </div>
+
+  <div class="listItem">
+    <img src="img/steve_card_s.png">
+    <br>
+    <div class="itemName">Face Checker</div>
+    <div class="itemDesc">Prevent credit card fraud using your face.</div>
+    <div class="itemBtns">
+      <br>
+      <!-- <button>Download App</button> -->
+      <input type="button" value="Buy/Download App" class="btn" onclick='$.get("http://docm.parseapp.com/uploadRunningApp?username=hc&password=hc&name=faceApp", function(data){});'></input>
+      <input type="button" value="Add to Wishlist" class="btn"></input>
+    </div>
+  </div>
+
+  <div class="listItem">
+    <img src="img/set3.jpg">
+    <br>
+    <div class="itemName">Security Motion App</div>
+    <div class="itemDesc">Secure your room - Receive a notification when we detect someone entering your room while you're out.</div>
+    <div class="itemBtns">
+      <br>
+      <!-- <button>Download App</button> -->
+      <input type="button" value="Buy/Download App" class="btn" onclick='$.get("http://docm.parseapp.com/uploadRunningApp?username=hc&password=hc&name=motionApp", function(data){});'></input>
+      <input type="button" value="Add to Wishlist" class="btn"></input>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<!-- JS Libaries -->
+<script src="js/lib/modernizr-2.6.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<!-- <script>window.jQuery || document.write('<script src="js/lib/jquery-1.10.1.min.js"><\/script>')</script> -->
+<script src="js/lib/bootstrap.min.js"></script>
+<!-- JS Custom -->
+<script src="snaptube.js"></script>
+
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

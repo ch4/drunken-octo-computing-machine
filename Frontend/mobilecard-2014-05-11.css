@@ -1,0 +1,83 @@
+.rein-in-fluid-width,
+#listDiv{
+  max-width: 700px;
+  margin-left: auto; /*calc(10% - 0px);*/
+  margin-right: auto;/*calc(10% - 0px);*/
+  padding-left:calc(10% - 0px);
+  padding-right:calc(10% - 0px);
+}
+
+.listItem{
+  margin-top:10px;
+}
+/* http://www.w3.org/Style/Examples/007/center.en.html */
+.listItem img{ width: 80%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.listItem .itemName{ font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+/*
+http://www.webdeveloper.com/forum/showthread.php?91080-Center-align-div-but-not-text
+"Please give us a simple answer, so that we don't have to think, because if we think, we might find answers that don't fit the way we want the world to be."
+~ Terry Pratchett in Nation
+*/
+.listItem .itemDesc{
+  margin-left: auto;
+  margin-right: auto;
+  width:90%;
+  text-align: center;
+}
+.listItem .itemBtns{
+  text-align: center;
+}
+.listItem .itemBtns input{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+#cardsListDiv{
+  margin-top:10px;
+  margin-bottom:100px;
+}
+#timeline{
+}
+
+#cardsListDiv div,
+#cardsListDiv div iframe,
+#cardsListDiv div div{
+  width:500px;
+}
+#cardsListDiv div div.details_topDiv span.fieldvalue{
+  font-size: 20px;
+}
+#cardsListDiv div div.details_topDiv span.fieldvalue input{
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+#cardsListDiv div{
+  margin-left:calc(50% - 250px);
+}
+#cardsListDiv div div{
+  padding-left:10px;
+}
+#cardsListDiv div div{
+  padding-left:10px;
+}
+.buttonDiv input{
+  margin-left: 10px;
+}
+
+
+#cardsListDiv div,
+#cardsListDiv div iframe,
+#cardsListDiv div div.x{
+
+}
